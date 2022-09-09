@@ -1,0 +1,12 @@
+p {
+    color: red;
+    width: 500px;
+    border: 1px solid black;
+  }
+tr{
+			
+				column-count:3;
+				column-gap:40px;
+				column-rule:3px solid rgb(3,140,185);
+			
+ }
