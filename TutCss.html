@@ -82,6 +82,163 @@
 		
 	  </table>
 	 
+    <h2><center><font color=#FFFFFF>DEFINICIÓN DE COLORES</font></h2>
+      <hr width=100%>
+    <table>
+      <tr>
+        <th scope="col">Elemento </th>
+        <th scope="col">Ejemplo</th>
+        <th scope="col">Enlace </th>
+       
+      </tr>
+      
+      <tr>
+        <td>Usando los nombres de colores</td>
+        <td><p>Podemos especificar un color usando un nombre predefinido</p>
+          <pre><code>
+          p{
+          color: red;
+          }</code></pre>
+           </td>
+        <td><a href=https://www.w3.org/TR/css-color-3/#svg-color>CSS Color Module </a></td>
+       
+      </tr>
+      
+      <tr>
+        <td>Usando el modelo RGB</td>
+        <td><p>Podemos  establecer el valor de  un color mezclando diferentes intensidades de los tres colores primarios.</p>
+          <hr width=50%>
+          <center><br><img src=colores.jpg alt="miManual" align=center  height=250 width=250></center>   </td>
+        <td><a href=https://htmlcolorcodes.com/es/>Codigo de colores</a></td>
+       
+      </tr>
+      <tr>
+        <td>Usando la función rgb(r,g,b) = rgb(red, green, blue) </td>
+        <td><p>El parámetro red = Especifica la intensidad del  rojo y los valores son: [0-255] o [0%-100%]
+          </p>
+              <p>El parámetro green = Especifica la intensidad del  verde y los valores son: [0-255] o [0%-100%]
+                </p> 
+              <p>El parámetro blue = Especifica la intensidad del  azul y los valores posibles son: [0-255] o [0%-100%]
+                </p></td>
+        <td><a href=https://developer.mozilla.org/es/docs/Web/CSS/color_value>Colores</a></td>
+       
+      </tr>
+      <tr>
+        <td>Usando un valor hexadecimal</td>
+        <td><p>El número hexadecima.</p>
+              <p>granate	= #800000.</p>
+              <p>rojo	    = #FF0000.</p> </td>
+        <td><a href=https://www.w3.org/TR/css-color-3/#svg-color>style</a></td>
+       
+      </tr>
+      <tr>
+        <td>Usando la función hsl(h, s, l), (hue, saturation, lightness)</td>
+        <td><p>El parámetro hue (tono); Los valores posibles son: [0-360].</p>
+              <p>El parámetro saturation (saturación);Los valores posibles son: [0%-100%].</p> 
+              <p>El parámetro ligthness (Luminosidad);Los valores posibles son de: [0%-100%].</p></td>
+        <td><a href=https://docs.google.com/document/d/1kPu6kIhCFCelum2ZkgMDTtgV3w20Cp6_PYQsMFqo1io/edit#>funcion_hsl</a></td>
+       
+      </tr>
+      <tr>
+        <td>Opacidad</td>
+        <td><p>Podemos definir la transparencia de un color usando la función hsla.</p>
+              <p>Los valores posibles son: [0-1].</p> </td>
+        <td><a href=https://hslpicker.com/>herramienta en línea</a></td>
+      
+      
+      </table>
+
+      <h2><center><font color=#FFFFFF>SELECTORES</font></h2>
+        <hr width=100%>
+      <table>
+        <tr>
+          <th scope="col">Elemento </th>
+          <th scope="col">Ejemplo</th>
+          <th scope="col">Enlace </th>
+         
+        </tr>
+        
+        <tr>
+          <td>SELECTOR UNIVERSAL (*)</td>
+          <td><p>Podemos especificar un color usando un nombre predefinido</p>
+            <pre><code>
+
+              Sintaxis 
+
+              *{ declaraciones CSS }
+
+              Ejemplo:
+
+              *{
+                color: green;
+              } 
+              </code></pre>
+             </td>
+          <td><a href=https://www.w3.org/TR/selectors-3/>Selector </a></td>
+         
+        </tr>
+        
+        <tr>
+          <td>SELECTORES DE TIPO (p)</td>
+          <td><p>Permite seleccionar elementos usando el nombre del elemento.
+            .</p>
+            <pre><code>
+
+              Sintaxis
+
+              nombre_elemento { declaraciones CSS }
+
+              Ejemplo:
+
+              p{
+                color: red;
+              } 
+              
+              </code></pre>
+            </td>
+          <td><a href=https://www.w3.org/TR/selectors-3//>Mas informacion</a></td>
+            </tr>
+            <tr>
+              <td>SELECTOR DE CLASE (.foo)</td>
+              <td><p>Permite seleccionar elementos en función de los valores del atributo class de los elementos</p>
+                <pre><code>
+    
+                  Sintaxis 
+
+                  .valor_atributo { declaraciones CSS }
+                  Ejemplo:
+                  <p class=”foo bar”> ¡HOLA MUNDO! </p>
+                  <p class=”foo baz”> ¡ADIÓS MUNDO! </p>
+                  
+                  .foo{
+                    color: blue;
+                  }
+                  
+                  </code></pre>
+                </td>
+              <td><a href=https://www.w3.org/TR/selectors-3//>Mas informacion</a></td>
+                </tr>
+                <tr>
+                  <td>SELECTORES DE ID (#foo)</td>
+                  <td><p>Permite seleccionar un elemento en función del valor del atributo ID del elemento.</p>
+                    <pre><code>
+        
+                      Sintaxis
+
+                      #valor_atributo { declaraciones CSS }
+
+                      Ejemplo:
+                      <p id=”foo”> ¡HOLA MUNDO! </p>
+                      
+                      #foo{
+                            color: blue;
+                      }
+                                             
+                      </code></pre>
+                  </td>
+                  <td><a href=https://www.w3.org/TR/selectors-3//>Mas informacion</a></td>
+                </tr>
+        </table>
 
 </body>
 </html>
