@@ -148,7 +148,7 @@
       
       </table>
 
-      <h2><center><font color=#FFFFFF>SELECTORES</font></h2>
+      <h2><center><font color=#FFFFFF>LONGITUDES EN CSS</font></h2>
         <hr width=100%>
       <table>
         <tr>
@@ -159,86 +159,82 @@
         </tr>
         
         <tr>
-          <td>SELECTOR UNIVERSAL (*)</td>
-          <td><p>Podemos especificar un color usando un nombre predefinido</p>
+          <td>LONGITUDES EN CSS</td>
+          <td><p>En CSS un longitud es una número y una unidad</p>
             <pre><code>
 
-              Sintaxis 
-
-              *{ declaraciones CSS }
-
-              Ejemplo:
-
-              *{
-                color: green;
-              } 
+              Ejemplos
+              5.3px
+              -20px
+              0
+               
               </code></pre>
              </td>
-          <td><a href=https://www.w3.org/TR/selectors-3/>Selector </a></td>
+          <td><a href=https://docs.google.com/document/d/1mIZVScFxK6x-3jMr767geNKWyRLPO7ihjUvhtqok0g8/edit#heading=h.kk5yaze0oq5e>Documentacion </a></td>
          
         </tr>
         
         <tr>
-          <td>SELECTORES DE TIPO (p)</td>
-          <td><p>Permite seleccionar elementos usando el nombre del elemento.
-            .</p>
-            <pre><code>
-
-              Sintaxis
-
-              nombre_elemento { declaraciones CSS }
-
-              Ejemplo:
-
-              p{
-                color: red;
-              } 
-              
-              </code></pre>
-            </td>
+          <td>Unidades absolutas</td>
+          <td><p>Unidad  &nbsp;          Nombre  &nbsp;          Equivalente a </p>
+            <p>   px   &nbsp;  &nbsp;          Pixel     &nbsp; &nbsp;         0.265 mm      </p>
+          
+           </td>
           <td><a href=https://www.w3.org/TR/selectors-3//>Mas informacion</a></td>
             </tr>
             <tr>
-              <td>SELECTOR DE CLASE (.foo)</td>
-              <td><p>Permite seleccionar elementos en función de los valores del atributo class de los elementos</p>
-                <pre><code>
-    
-                  Sintaxis 
-
-                  .valor_atributo { declaraciones CSS }
-                  Ejemplo:
-                  <p class=”foo bar”> ¡HOLA MUNDO! </p>
-                  <p class=”foo baz”> ¡ADIÓS MUNDO! </p>
+              <td>Unidades relativas (.foo)</td>
+              <td><p>Unidad &nbsp;&nbsp; &nbsp;&nbsp;Relativo a </p>
+                <p>rem &nbsp;&nbsp; &nbsp;&nbsp;&nbsp; Relativo al tamaño de la letra del elemento root (El elemento html)</p>
+                <p>% &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;  Si establecemos el valor de la propiedad font-size, será un porcentaje del font-size del elemento padre.</p>
                   
-                  .foo{
-                    color: blue;
-                  }
-                  
-                  </code></pre>
+               <p> vw &nbsp;&nbsp; &nbsp;&nbsp;&nbsp; Relativo al ancho del viewport</p>
+                <p>vh &nbsp;&nbsp; &nbsp;&nbsp;&nbsp; Relativo al alto del viewport</p>
+                
                 </td>
-              <td><a href=https://www.w3.org/TR/selectors-3//>Mas informacion</a></td>
+              <td><a href=https://dev.to/dupjpr/unidades-de-longitud-css-47bg>Mas informacion</a></td>
                 </tr>
-                <tr>
-                  <td>SELECTORES DE ID (#foo)</td>
-                  <td><p>Permite seleccionar un elemento en función del valor del atributo ID del elemento.</p>
-                    <pre><code>
-        
-                      Sintaxis
 
-                      #valor_atributo { declaraciones CSS }
+               
+          </table>
 
-                      Ejemplo:
-                      <p id=”foo”> ¡HOLA MUNDO! </p>
-                      
-                      #foo{
-                            color: blue;
-                      }
-                                             
-                      </code></pre>
-                  </td>
-                  <td><a href=https://www.w3.org/TR/selectors-3//>Mas informacion</a></td>
+          <h2><center><font color=#FFFFFF>MODELO DE CAJAS</font></h2>
+            <hr width=100%>
+          <table>
+            <tr>
+              <th scope="col">Elemento </th>
+              <th scope="col">Ejemplo</th>
+              <th scope="col">Enlace </th>
+             
+            </tr>
+            
+            <tr>
+              <td>Modelo de cajas en css</td>
+              <td><p> CSS determina el tamaño, posicion y propiedades(color, fondo, el ancho del borde, etc)</p>
+                <hr width=50%>
+                <center><br><img src=modelo-caja.jpg alt="miManual" align=center  height=250 width=250></center>   
+                <ul style=square color=pink>
+                 </td>
+              <td><a href=https://developer.mozilla.org/es/docs/Learn/CSS/Building_blocks/The_box_model>Documentacion </a></td>
+             
+            </tr>
+            
+            <tr>
+              <td>Modelo</td>
+              <td><p><h3>Contenido  &nbsp; &nbsp;  &nbsp;&nbsp; &nbsp;&nbsp;  &nbsp;&nbsp;  Relleno  &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp;&nbsp; Borde &nbsp; &nbsp;  &nbsp;&nbsp; &nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;Margen </p></h3>
+                <p> width &nbsp;&nbsp;  &nbsp;&nbsp;&nbsp; &nbsp;  &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;  padding-top &nbsp;&nbsp;  &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; border-width&nbsp;&nbsp;  &nbsp;&nbsp; &nbsp;  &nbsp;&nbsp; &nbsp;  &nbsp; margin-top</p>
+                <p> min-width&nbsp; &nbsp;  &nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;padding-bottom &nbsp; &nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;  &nbsp; border-style &nbsp;&nbsp; &nbsp; &nbsp;&nbsp;  &nbsp;&nbsp; &nbsp; margin-right</p>
+                <p>  max-width&nbsp; &nbsp; &nbsp;&nbsp;  &nbsp;&nbsp; &nbsp;&nbsp;  &nbsp;&nbsp;padding-left &nbsp; &nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;  &nbsp; border-color. &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;  &nbsp; margin-bottom</p>
+                <p>  height&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;  &nbsp;&nbsp; &nbsp;&nbsp;  &nbsp;&nbsp;  &nbsp;&nbsp; padding &nbsp; &nbsp;  &nbsp; &nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;border &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;  &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp;&nbsp;&nbsp;  &nbsp;&nbsp; margin-left</p>
+                <p>  min-height&nbsp; &nbsp;  &nbsp; &nbsp; &nbsp;  &nbsp;</p>
+                <p>  max-height&nbsp; &nbsp;  &nbsp;&nbsp; &nbsp;  &nbsp;</p>
+
+               </td>
+              <td><a href=https://developer.mozilla.org/es/docs/Learn/CSS/Building_blocks/The_box_model>Mas informacion</a></td>
                 </tr>
-        </table>
+                                 
+              </table>
+
 
 </body>
 </html>
