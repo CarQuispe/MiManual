@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="shortcut icon" href="icono.jpg">
+<title> Mi Manual</title>
+<link rel="stylesheet" href="estilos.css">
+</head>
+<body bgcolor=#ADD8E6>
+    <div class="dropdown">
+        <button class="mainmenubtn">Menu del manual</button>
+        <div class="dropdown-child">
+          <a href="TutHtml.html">HTML</a>
+          <a href="TutCss.html">CSS</a>
+          <a href="Index.html">Principal</a>
+        </div>
+    </div>
+<h3> <center><font color=#FFFFFF><I> PACIENCIA Y TIEMPO SON LOS MEJORES MAESTROS </I></font></h3>
+<h1><center><font color=#FFFFFF>MI MANUAL</font></h1>
+<h5> <center><font color=#FFFFFF><I> Carmen Rosa Quispe Reynaga </I></font></h5>
+<hr width=50%>
+<center><br><img src=desarrollo.jpg alt="miManual" align=center  height=250 width=250></center>   
+<ul style=square color=pink>
+</style>	
+
+<h2><center><font color=#FFFFFF>CONTENEDOR FLEXIBLE Y ELEMENTOS FLEXIBLES</font></h2>
+    <hr width=100%>
+    <table>
+        <tr>
+          <th scope="col">Flexbox </th>
+          <th scope="col">Flexbox viene de “Flexible Box Layout“, que se puede traducir como “Diseño de caja flexible“, y nos aporta una magnífica solución para todos nuestros desarrollos “responsive”.
+        </th>
+       
+                           
+      </table>
+      <TABLE BORDER>
+        <TR>
+            <TD>TERMINOS IMPORTANTES</TD>
+            <TD><center><img src=flexon.png alt="miManual" align=center  height=500 width=600></center></TD>
+        </TR>
+        <TR>
+            <TD><p>Lineas flexibles</p>
+            <p><a href=https://f-beltran.github.io/flex-conceptos/>Documentacion</a></p></TD>
+            <TD ><center><img src=lineas.png alt="miManual" align=center  height=500 width=600></center></TD>
+        </TR>
+       
+    </TABLE>
+	<h2><center><font color=#FFFFFF>FLEXBOX</font></h2>
+		<hr width=100%>
+	<table>
+		<tr>
+		  <th scope="col">Elemento </th>
+		  <th scope="col"><center>Ejemplo</center></th>
+		  <th scope="col">Enlace </th>
+		 
+		</tr>
+	  
+		<tr>
+		  <td>EJE PRINCIPAL DE IZQUIERDA A DERECHA</td>
+          <td><p><center><img src=direction-row.png alt="miManual" align=center  height=400 width=500></center></p>
+            
+
+                HTML
+                <pre>
+                    &lt;div class="contenedor"&gt;
+                    &lt;div&gt;E1&lt;/div&gt;
+                    &lt;div&gt;E2&lt;/div&gt;
+                    &lt;div&gt;E3&lt;/div&gt;
+                    &lt;/div&gt;
+                </pre> 
+             <pre><code>                      
+                CSS
+                .contenedor{
+                    display: flex;
+                    flex-direction: row; [VALOR  POR DEFECTO] 
+                }
+              </code></pre>
+             </td>
+		  <td><a href=https://f-beltran.github.io/flex-direccion-principal/>Documentacion</a></td>
+		 
+		</tr>
+	  
+		<tr>
+            <td>EJE PRINCIPAL DE DERECHA A IZQUIERDA</td>
+            <td><p><center><img src=direction-row-reverse.png alt="miManual" align=center  height=400 width=500></center></p>
+              
+  
+                  HTML
+                  <pre>
+                      &lt;div class="contenedor"&gt;
+                      &lt;div&gt;E1&lt;/div&gt;
+                      &lt;div&gt;E2&lt;/div&gt;
+                      &lt;div&gt;E3&lt;/div&gt;
+                      &lt;/div&gt;
+                  </pre> 
+               <pre><code>                      
+                CSS
+                .contenedor{
+                    display: flex;
+                    flex-direction: row-reverse; 
+                }
+                </code></pre>
+               </td>
+            <td><a href=https://f-beltran.github.io/flex-direccion-principal/>Documentacion</a></td>
+           
+          </tr>
+          <tr>
+            <td>EJE PRINCIPAL DE ARRIBA A ABAJO</td>
+            <td><p><center><img src=column.png alt="miManual" align=center  height=400 width=500></center></p>
+              
+  
+                  HTML
+                  <pre>
+                      &lt;div class="contenedor"&gt;
+                      &lt;div&gt;E1&lt;/div&gt;
+                      &lt;div&gt;E2&lt;/div&gt;
+                      &lt;/div&gt;
+                  </pre> 
+               <pre><code>                      
+                CSS
+                .contenedor{
+                    display: flex;
+                    flex-direction: column; 
+                }
+                  
+                </code></pre>
+               </td>
+            <td><a href=https://f-beltran.github.io/flex-direccion-principal/>Documentacion</a></td>
+           
+          </tr>
+          <tr>
+            <td>EJE PRINCIPAL DE ABAJO A ARRIBA</td>
+            <td><p><center><img src=column-reverse.png alt="miManual" align=center  height=400 width=500></center></p>
+              
+  
+                  HTML
+                  <pre>
+                      &lt;div class="contenedor"&gt;
+                      &lt;div&gt;E1&lt;/div&gt;
+                      &lt;div&gt;E2&lt;/div&gt;
+                      &lt;/div&gt;
+                  </pre> 
+               <pre><code>                      
+                CSS
+                .contenedor{
+                    display: flex;
+                    flex-direction: column-reverse; 
+                }
+                  
+                </code></pre>
+               </td>
+            <td><a href=https://f-beltran.github.io/flex-direccion-principal/>Documentacion</a></td>
+           
+          </tr>
+          <tr>
+            <td> flex-wrap</td>
+            <td><p><center><img src= flex-wrap.png alt="miManual" align=center  height=400 width=500></center></p>
+               
+               <pre><code>                      
+                CSS
+                .contenedor{
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: nowrap; [VALOR POR DEFECTO]
+                }
+                 
+                </code></pre>
+               </td>
+            <td><a href=https://f-beltran.github.io/flex-eje-transversal/>Documentacion</a></td>
+           
+          </tr>
+          <tr>
+            <td>align-content</td>
+            <td><p><center><img src=align-content.jpg alt="miManual" align=center  height=400 width=500></center></p>
+              <pre><code>                      
+                CSS
+                .contenedor{
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-content: flex-start | flex-end | space-between | center | space-around | stretch; 
+                }                 
+                </code></pre>
+               </td>
+            <td><a href=https://f-beltran.github.io/flex-colocar-lineas/>Documentacion</a></td>
+           
+          </tr>
+		
+	  </table>
+	 
+     
+
+
+</body>
+</html>
