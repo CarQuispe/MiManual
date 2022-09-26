@@ -1,28 +1,25 @@
 body {
-    background-color: #303030;
-    color: #fff;
+    background-color: #E3D4D0;
+    color: rgb(14, 13, 13);
     padding: 0;
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.5rem;
   }
-  a {
-    color: #ffa;
-  }
-  .container {
+   .container {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
   }
   header {
-    background-color: #369;
+    background-color: #7A8D9B;
     padding: 0.6rem 1rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
   header img {
-    width: 150px;
+    width: 450px;
   }
   nav ul {
     margin: 0;
@@ -43,7 +40,7 @@ body {
   }
  
   aside {
-    background-color: rgb(10, 40, 52);
+    background-color: #DABEB6;
     width: 300px;
     max-width: 300px;
     min-width: 300px;
@@ -60,57 +57,54 @@ body {
     flex-direction: column;
   }
   footer a {
-    color: #36d;
+    color: #7A8D9B;
   }
 
   .contenedor{
     height:240px;
     display:flex;
     flex-flow:row wrap;
-    align-items:baseline;
+    align-content:stretch;
     }
     .elemento{
-    width:21%;
-    line-height:2rem;
-    }
-    .elemento:first-child{
-    line-height:4rem;
-    }
-    .elemento:nth-child(3){
-    font-size:1rem;
-    line-height:1.2rem;
-    }
-    .elemento:nth-child(6){
-    font-size:3rem;
-    line-height:5rem;
-    }
-    .elemento:last-child{
-    line-height:3rem;
+    width:25%;
     }
 
-    *{box-sizing:border-box;}
 
-		.container{
-			width:95%;
-			max-width:900px;
-			padding:32px 64px;
-			margin:auto;
-		}
+h1 {
+  max-width: 200px;
+  
+  span {
+    width: 50%;
+    background-image: linear-gradient(
+      to bottom,
+      rgba(172, 106, 172, 0) 50%,
+      rgba(172, 106, 172, 1) 50%,
+      rgba(172, 106, 172, 1) 60%,
+      rgba(172, 106, 172, 0) 60%,
+    );
+    background-size: 0 100%;
+    background-repeat: no-repeat;
+    transition: 250ms linear;
+  }
 
-		.social{
-			/*las imágenes usadas tienen width de 48px*/
-			width:48px;
-			position:fixed;
-			top:50px;
-			right:0;
-		}
 
-		/* Extra centrado vertical*/
+  span:hover {
+    background-size: 50% 50%;
+  }
+}
 
-		.social{
-			/*border:1px solid #000;*/
-			top:50%;
-			height:205px;
-			/*para poner height 192 deberíamos haber indicado en el reset de estilos font-size:0;*/
-			margin-top:-100px;
-		}
+a{
+  color: #EED0C6;
+  text-decoration: none;
+  font-family: 'Niconne', cursive;
+  font-size: 1.2rem;
+
+}
+p{
+  font-family: 'Niconne', cursive;
+  color: #050505;
+}
+h3{
+  font-family:  cursive;
+}

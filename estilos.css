@@ -1,8 +1,26 @@
-body{
-	background-color: #2ca1f0;
-	font-family: Arial;
-}
-
+body {
+    background-color: #CCE6CB;
+    color: rgb(14, 13, 13);
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.5rem;
+  }
+   .container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  header {
+    background-color: #82BEB6;
+    padding: 0.6rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header img {
+    width: 950px;
+  }
 #main-container{
 	margin: 150px auto;
 	width: 600px;
@@ -20,7 +38,7 @@ th, td{
 }
 
 thead{
-	background-color: #7173e9;
+	background-color: #82BEB6;
 	border-bottom: solid 5px #0d0e4e;
 	color: white;
 }
@@ -30,7 +48,7 @@ tr:nth-child(even){
 }
 
 tr:hover td{
-	background-color: #365896;
+	background-color: #82BEB6;
 	color: white;
 }
 
@@ -43,7 +61,43 @@ tr:hover td{
     margin-top:20px;
 }
 .mainmenubtn:hover {
-    background-color: blue;
+    background-color: 82BEB6;
+    }
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-child {
+    display: none;
+    background-color: 729691;
+    min-width: 200px;
+}
+.dropdown-child a {
+    color: #729691;
+    padding: 20px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown:hover .dropdown-child {
+    display: block;
+}
+.contenedor{
+    display:flex;
+    }
+ .elemento{
+    width:700%;
+}
+
+.mainmenubtn {
+    background-color: skyblue;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding:20px;
+    margin-top:20px;
+}
+.mainmenubtn:hover {
+    background-color: #729691;
     }
 .dropdown {
     position: relative;
@@ -55,7 +109,7 @@ tr:hover td{
     min-width: 200px;
 }
 .dropdown-child a {
-    color: blue;
+    color: #729691;
     padding: 20px;
     text-decoration: none;
     display: block;
