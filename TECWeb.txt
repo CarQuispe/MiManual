@@ -1,0 +1,23 @@
+Texto plano  -> es un texto sin formato 
+es un texto sin format con una extencion, de HTML hipertexto que te
+permite conextar un doc con otro doc
+
+creamos un intex y otras paginas y todo eso es un sitio web, eje wikipedia que 
+nos manda a otro sitio.
+WORLD WIDE WEB es la totalidad de los documentos interconectados
+
+Lenguaje de marcado por usar etiquetas, o elementos, un doc de html es un conjunto 
+de etiquetas 
+ELEMENTOS
+una pagina esta constituye de elementos como <p></p>
+ELEMENTOS 
+vacios
+elementos hijos y ansestros
+Atributos  normales
+Atributos vacios <input disable>= campo de formulario que no estara habilitado
+ATRIBUTOS GLOBALES
+son atributos que se puede utilizar en elementos de tipo div, p 
+id="sin-importancia"se puede utilizar con todos los elementos
+ATRIBUTOS PERSONALIZADOS
+ atributos comunes a todos los elementos HTML pueden ser usados en todos los elementos
+<div data-edad="21"> ........</div>

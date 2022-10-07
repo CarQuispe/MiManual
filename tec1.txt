@@ -1,0 +1,14 @@
+git
+utilizar git
+ejem
+git status verificar estado
+nueva rrama
+git checkout -b test
+ descargar los cambios ( git add-A)
+git config --gloval user.mail
+
+git branch
+rama master git checkout master
+creo la rama y poner en la rama master 
+Segunda Parte
+subir a produccion git push
